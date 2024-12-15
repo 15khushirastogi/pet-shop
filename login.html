@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Welcome</h2>
+        <div class="tabs">
+            <button onclick="location.reload()" class="active">LOGIN</button>
+            <button onclick="showRegisterForm()">REGISTER</button>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="role">Select Role</label>
+                <select id="role">
+                    <option value="select">----</option>
+                    <option value="customer">Customer</option>
+                    <option value="trainer">Trainer</option>
+                    <option value="admin">Admin</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="********">
+            </div>
+            <div class="form-group remember-me-checkbox">
+                <div class="checkbox">
+                    <input type="checkbox" id="remember">
+                </div>
+                <div class="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <a href="#" style="margin-left:12rem;">Forgot password?</a>
+            </div>
+            <button type="submit" class="submit">Login</button>
+        </form>
+        <div class="footer">
+            Protected by reCAPTCHA and subject to the Privacy Policy and Terms of Service
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
